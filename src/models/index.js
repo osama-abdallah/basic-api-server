@@ -16,7 +16,7 @@ let sequelizeOptions =  {
     }
   }
 
-let sequelize =new Sequelize(POSTGRES_URL ,dialectOptions);
+let sequelize =new Sequelize(POSTGRES_URL ,sequelizeOptions);
 
 module.exports ={
     db :sequelize,
