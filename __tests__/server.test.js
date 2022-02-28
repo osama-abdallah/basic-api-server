@@ -12,7 +12,7 @@ describe("server test", () => {
     })
 
     it('test 404 on a bad method', async () => {
-        const response = await request.get('/food');
+        const response = await request.delete('/foods');
         expect(response.status).toEqual(404);
     })
 
@@ -37,7 +37,7 @@ describe("server test", () => {
 
     it('testing Deleted one', async () => {
         const response = await request.delete('/foods/1');
-        expect(response.text).toEqual("deleteFood");
+        expect(response.text).toEqual("removedFood");
     })
 }
 

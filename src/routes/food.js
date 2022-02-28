@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const { Foods } = require('../models/index');
+const { Foods } = require('../models/index.js');
 
 router.get('/foods', async (req, res) => {
 
