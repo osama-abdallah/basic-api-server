@@ -25,7 +25,7 @@ router.get('/clothes/:id', async (req, res) => {
 
 });
 
-router.post('/clothes' ,async (req ,res) =>{
+router.post('/clothes', async (req ,res) =>{
    let body =req.body;
    
    let newClothes = await Clothes.create(body);
