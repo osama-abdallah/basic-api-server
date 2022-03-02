@@ -35,9 +35,8 @@ router.put("/foods/:id", async (req, res) => {
   let body = req.body;
 
   let revisedFood = await Foods.update(
-    {
+  
       body,
-    },
     {
       where: {
         id: id,

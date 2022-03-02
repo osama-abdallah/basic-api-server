@@ -34,9 +34,8 @@ router.put("/clothes/:id", async (req, res) => {
   let body = req.body;
 
   let renewedClothes = await Clothes.update(
-    {
+    
       body,
-    },
     {
       where: {
         id: id,
