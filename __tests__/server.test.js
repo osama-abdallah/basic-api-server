@@ -3,8 +3,17 @@
 const server = require("../src/server");
 const supertest = require('supertest');
 const request = supertest(server.app);
+const {db} = require('../src/models/index')
 
 describe("server test", () => {
+
+    beforeAll(async ()=>{
+        await db.sync()
+    })
+
+    afterAll(async ()=>{
+        await db.drop()
+    })
 
     it('test 404 on a bad route', async () => {
         const response = await request.get('/food');

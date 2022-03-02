@@ -1,6 +1,6 @@
 'use strict';
 
-const cors =require('cors');
+const cors = require('cors');
 const express = require('express');
 const logger =require('./middleware/logger');
 
@@ -28,9 +28,9 @@ app.use("*",errorHandle404);
 
 
 
-function start(PORT) {
-app.listen(PORT, () => {
-    console.log(`Server online through port ${PORT}`);
+function start(port) {
+app.listen(port, () => {
+    console.log(`Server online through port ${port}`);
 })    
 }
 

@@ -1,14 +1,14 @@
-const Clothes = (seq ,types) => seq.define(
-    'clothes' ,
-    {
-        brandName :{
-            type :types.STRING,
-            allowNull:false
-        },
-        type :{
-            type :types.STRING,
-            allowNull:false
-        }
-    }
-);
-module.exports =Clothes;
+'use strict'
+
+const Clothes = (sequelize ,DataTypes) =>
+sequelize.define("clothes", {
+    brandName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    type: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  });
+module.exports = Clothes;
