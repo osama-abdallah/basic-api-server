@@ -1,7 +1,7 @@
 # basic-api-server
 
 [pullrequest](https://github.com/osama-abdallah/basic-api-server/pulls)  
-[main-heroku-link](https://osama-express-rest-api.herokuapp.com/)  
+[main-heroku-link](https://osama-basic-api-server.herokuapp.com/)  
 [actions-link](https://github.com/osama-abdallah/basic-api-server/actions)  
 [Repo-Link](https://github.com/osama-abdallah/basic-api-server)
 
