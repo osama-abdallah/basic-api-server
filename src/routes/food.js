@@ -49,7 +49,7 @@ router.put("/foods/:id", async (req, res) => {
 });
 
 router.delete("/foods/:id", async (req, res) => {
-  let { id } = req.params;
+  let id = req.params.id;
 
   await Foods.destroy({
     where: {
